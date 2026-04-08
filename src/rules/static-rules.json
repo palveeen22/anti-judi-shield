@@ -1,0 +1,238 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=domain_blacklist"
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "judionline88.com",
+        "slot138.xyz",
+        "slot88.site",
+        "slotgacor88.com",
+        "maxwin777.xyz",
+        "gacor88.xyz",
+        "togel88.com",
+        "casino88.com",
+        "judibola88.com",
+        "pokeronline88.com"
+      ],
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=domain_blacklist"
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "1xbet.com",
+        "1xbet.org",
+        "1xbet.mobi",
+        "bet365.com",
+        "bet365.es",
+        "betway.com",
+        "888casino.com",
+        "888poker.com",
+        "888sport.com",
+        "williamhill.com",
+        "paddypower.com",
+        "bwin.com",
+        "unibet.com",
+        "betfair.com",
+        "pokerstars.com",
+        "pokerstars.net",
+        "partypoker.com",
+        "ladbrokes.com",
+        "draftkings.com",
+        "fanduel.com",
+        "bovada.lv",
+        "stake.com",
+        "stake.us",
+        "roobet.com",
+        "rollbit.com",
+        "bc.game"
+      ],
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=domain_blacklist"
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "sbobet.com",
+        "w88.com",
+        "m88.com",
+        "fun88.com",
+        "12bet.com",
+        "dafabet.com",
+        "bk8.com",
+        "22bet.com",
+        "1win.com",
+        "1win.bet",
+        "mostbet.com",
+        "melbet.com",
+        "melbet.org",
+        "parimatch.com",
+        "betwinner.com",
+        "megapari.com",
+        "linebet.com",
+        "pin-up.casino",
+        "vulkanvegas.com",
+        "leovegas.com"
+      ],
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=suspicious_domain"
+      }
+    },
+    "condition": {
+      "regexFilter": "slot\\d*\\.(xyz|site|online|fun|top|click)",
+      "resourceTypes": ["main_frame"],
+      "isUrlFilterCaseSensitive": false
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=suspicious_domain"
+      }
+    },
+    "condition": {
+      "regexFilter": "judi\\d*\\.(xyz|site|online|fun|top|click)",
+      "resourceTypes": ["main_frame"],
+      "isUrlFilterCaseSensitive": false
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=suspicious_domain"
+      }
+    },
+    "condition": {
+      "regexFilter": "gacor\\d*\\.(xyz|site|online|fun|top|click)",
+      "resourceTypes": ["main_frame"],
+      "isUrlFilterCaseSensitive": false
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=suspicious_domain"
+      }
+    },
+    "condition": {
+      "regexFilter": "togel\\d*\\.(xyz|site|online|fun|top|click)",
+      "resourceTypes": ["main_frame"],
+      "isUrlFilterCaseSensitive": false
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=url_keywords"
+      }
+    },
+    "condition": {
+      "regexFilter": "slot[\\-_]?gacor",
+      "resourceTypes": ["main_frame"],
+      "isUrlFilterCaseSensitive": false
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=url_keywords"
+      }
+    },
+    "condition": {
+      "regexFilter": "bocoran[\\-_]?slot",
+      "resourceTypes": ["main_frame"],
+      "isUrlFilterCaseSensitive": false
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/src/pages/blocked/index.html?reason=suspicious_domain"
+      }
+    },
+    "condition": {
+      "regexFilter": "\\d*xbet\\.(com|net|org|mobi)",
+      "resourceTypes": ["main_frame"],
+      "isUrlFilterCaseSensitive": false
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": ".*\\.(jpg|jpeg|png|gif|webp|svg).*slot.*gacor",
+      "resourceTypes": ["image"],
+      "isUrlFilterCaseSensitive": false
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "1xbet.com",
+        "bet365.com",
+        "betway.com",
+        "sbobet.com",
+        "stake.com",
+        "roobet.com"
+      ],
+      "resourceTypes": ["image", "media"]
+    }
+  }
+]
