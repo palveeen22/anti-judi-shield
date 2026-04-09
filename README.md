@@ -191,6 +191,51 @@ Keyword Scan (~10ms)
 
 ---
 
+## Demo Preview
+
+### AI Content Detection — Google Search Warning
+<p align="center">
+  <img src="public/assets/ss1.png" width="700" alt="Gambling content detected on Google search results for 'situs gacor'">
+</p>
+
+> **Feature: AI Content Detection overlay**
+> When you search for gambling-related terms like *"situs gacor"*, the extension scans the page in real time. A warning badge — **"Konten Judi Terdeteksi!"** (Gambling Content Detected!) — appears in the bottom-right corner with the number of gambling links and keywords found. The user must acknowledge it before continuing.
+
+---
+
+### AI Content Detection — Togel / Lottery Search
+<p align="center">
+  <img src="public/assets/ss2.png" width="700" alt="Gambling content detected on Google search results for 'togel'">
+</p>
+
+> **Feature: AI Content Detection overlay (dark mode)**
+> Same detection fires for lottery-related searches (*togel*, *SGP*, *HK*). The five-layer structural analysis (meta, links, DOM, text, coherence) runs within ~30–60ms and surfaces the overlay without blocking legitimate pages that happen to mention gambling in passing.
+
+---
+
+### Domain Blacklist — Block Interception Page
+<p align="center">
+  <img src="public/assets/ss3.png" width="700" alt="Blocked page interception with reason=domain_blacklist">
+</p>
+
+> **Feature: Website Blocking + Interception Page**
+> When a user navigates to a known gambling domain, Chrome's `declarativeNetRequest` intercepts the request and redirects to the extension's built-in block page (`?reason=domain_blacklist`). The page shows a countdown timer, motivational quotes, and gambling risk facts before allowing any action.
+
+---
+
+### Analytics Dashboard
+<p align="center">
+  <img src="public/assets/ss4.png" width="700" alt="Anti-Judi Shield analytics dashboard showing block stats, streak, and chart">
+</p>
+
+> **Feature: Behavioral Dashboard**
+> The full-page dashboard (*Dashboard Perlindungan*) shows:
+> - **Daily & total block count** — how many gambling sites were blocked today and all-time
+> - **7-day bar chart** — visual block history for the past week
+> - **Streak tracking** — days clean with milestone badges (1 week → 1 month → 3 months → 6 months → 1 year)
+> - **Top blocked domains** — most frequently intercepted sites
+> - Tabs for **Settings** and **Block List** management
+
 ## Privacy
 
 - **No data leaves your device.** All detection runs locally in the browser.
@@ -213,4 +258,3 @@ Keyword Scan (~10ms)
 ## License
 
 MIT
-# anti-gambling-shield
